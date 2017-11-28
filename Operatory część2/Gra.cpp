@@ -57,6 +57,7 @@ Gra Gra::operator++()
 	{
 		if (zawodnicy[i]->kategoria < 6)zawodnicy[i]->kategoria++;
 	}
+	stan = (iloœæ_zawodników == LIMIT ? 1 : 0);
 	return backup;
 }
 
@@ -66,6 +67,7 @@ Gra Gra::operator++(int)
 	{
 		if (zawodnicy[i]->kategoria < 6)zawodnicy[i]->kategoria++;
 	}
+	stan = (iloœæ_zawodników == LIMIT ? 1 : 0);
 	return *this;
 }
 
